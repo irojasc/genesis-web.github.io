@@ -26,11 +26,36 @@ header {
 .navigation-container {
     width: 100%;
     min-width: 320px;
-    height: 60px;
     background-color: var(--navigation);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35%;
     padding: 10px 18px;
+}
+
+.navigation-container nav {
+    width: 110px;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.nav-icon{
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.user-icon{
+    background-image: url('../assets/icons/user.png');
+    vertical-align: top;
+}
+
+.menu-icon{
+    background-image: url('../assets/icons/menu.png');
+    height: 32px;
 }
 
