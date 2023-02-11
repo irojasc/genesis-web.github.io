@@ -58,3 +58,40 @@ header {
     height: 32px;
 }
 
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+.search-text {
+    position: absolute;
+    height: 45px;
+    width: calc(100% - 48px);
+    padding-left: 18px;
+    border-color: #fff;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    border: none;
+}
+
+.btn-search {
+    position: absolute;
+    left: calc(100% - 48px);
+    background-color: #FF6B6B;
+    height: 45px;
+    width: 48px;
+    border: none;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+}
+
+.search-icon{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../assets/icons/search.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
