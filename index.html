@@ -6,22 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <section class="navigation-container">
+        <section class="main-header-container">
             <figure><a href=""><img class="logo-img" src="./assets/imgs/logo.png" alt="logo"></a></figure>
+            
+            <div class="search-container">
+                <form class="search-form" action="">
+                    <input class="search-text" type="text" placeholder="Titulo, Autor o ISBN" >
+                    <button class="btn-search" title="buscar" type="submit"><span class="nav-icon search-icon"></span></button>
+                </form>
+            </div>
+
+            <div class="main-container-nav">
+                <a href="">
+                    <span class="nav-icon user-icon"></span>
+                    <span class="nav-icon-text">Mi cuenta</span>
+                </a>
+                <a href="" id="hola">
+                    <span class="nav-icon menu-icon"></span>
+                    <span class="nav-icon-text">Mi compra</span>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="navigation-container">
             <nav>
-                <a href=""><span class="nav-icon user-icon"></span></a>
-                <a href=""><span class="nav-icon menu-icon"></span></a>
+                <ul class="navigation-list">
+                    <li><a href="">INICIO</a></li>
+                    <li><a href="">LIBROS MAS VENDIDOS</a></li>
+                    <li><a href="">NOVEDADES Y NOTICIAS</a></li>
+                    <li><a href="">AUTORES</a></li>
+                    <li><a href="">EDITORIALES</a></li>
+                    <li><a href="">LIBROS ANTIGUOS</a></li>
+                </ul>
             </nav>
         </section>
-        <section class="search-container">
-            <form action="">
-                <input class="search-text" type="text" placeholder="Titulo, Autor o ISBN">
-                <button class="btn-search" title="buscar" type="submit"><span class="search-icon"></span></button>
-            </form>
-        </section>
+
     </header>
     <main></main>
     <footer></footer>    
