@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Heebo', sans-serif;
 }
 
 :root{
@@ -18,21 +19,21 @@ header {
     width: 100%;
 }
 
-.logo-img{
-    max-height: 50px;
-    display: block;
-}
-
 .main-header-container {
     position: relative;
     width: 100%;
-    min-width: var(--min-header-width); /* este es el que esta limitando el crecimiento */
     height: 100px;
+    min-width: var(--min-header-width); /* este es el que esta limitando el crecimiento */
     background-color: var(--navigation);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+
+.logo-img{
+    max-height: 50px;
+    display: block;
 }
 
 .search-container{
@@ -74,7 +75,6 @@ header {
 
 
 .main-container-nav a{
-    font-family: 'Heebo', sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
@@ -129,6 +129,10 @@ header {
     text-decoration: none;
 }
 
+.hamburgerMenu, #hamburger{
+    display: none;
+}
+
 
 @media screen and (max-width: 1070px){
 
@@ -148,26 +152,65 @@ header {
 
 @media screen and (max-width: 775px){
 
+    .hamburgerMenu { 
+        display: block;
+    }
+
+    .hamburgerMenu label {
+        display: inline-block;
+        cursor: pointer;
+        padding: 18px 2px 7px ;
+        height: 50px;
+        width: 40px;
+    }
+
+    .hamburgerMenu label div {
+        border-top: 2.7px solid #fff;
+        display: block;
+        height: 10px;
+        width: 25px;
+    }
+
+    .main-container-nav{
+        width: 135px;
+    }
+
     .logo-img{
-        max-height: 25px;
+        max-height: 32px;
     }
 
     .main-header-container {
-        position: relative;
-        width: 100%;
         min-width: 320px;
         height: 50px;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        padding: 0 20px 0 30px;
+        padding: 0 5px 0 15px;
     }
 
     .navigation-container{
         min-width: 320px;
+        transition: height 1s;
+        padding: 0 10px 0;
+        overflow-y: hidden;
+        position: absolute;
+        display: block;
         width: 100%;
-        display: none;
+        height: 0px;
+        top: 100px;
+        left: 0px;
+    }
+
+    .navigation-list, .navigation-list li, .navigation-list li a{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    #hamburger:checked~.navigation-container{
+        height: calc(100vh - 100px);
+    }
+
+    #hamburger:not(:checked)~.navigation-container {
+        height: 0px;
     }
 
     .search-container{
@@ -199,7 +242,7 @@ header {
         height: 48px;
         width: 55px;
         border-radius: 0;
-        box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+        box-shadow: 0 2px 8px rgb(0 0 0 / 8%); 
     }
 }
 
