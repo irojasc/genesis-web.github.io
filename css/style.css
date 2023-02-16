@@ -154,16 +154,28 @@ header {
 
 .main-login-container{
     width: 100%;
-    height: 310px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    /* background-color: pink; */
 }
 
 .login-container{
+    grid-column: 2 / 3;
+    place-self: center;
     width: 100%;
-    height: 100%;
-    background-color: pink;
+    height: 400px;
+    /* background-color: pink; */
+    padding: 0 30px;
+    border: ;
+}
+
+.login-container .txt-form{
+    height: 49px;
+    max-width: 418px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
 }
 
 

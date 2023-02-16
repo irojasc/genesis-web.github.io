@@ -19,9 +19,82 @@
     </script> 
 </head>
 <body>
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
+
+    <header>
+        <input type="checkbox" id="hamburger">
+        
+        <section class="main-header-container">
+            <figure><a href="./index.html"><img class="logo-img" src="./assets/imgs/logo.png" alt="logo"></a></figure>
+            
+            <div class="search-container">
+                <form class="search-form" action="">
+                    <input class="search-text" type="text" placeholder="Titulo, Autor o ISBN" >
+                    <button class="btn-search" title="buscar" type="submit"><span class="nav-icon search-icon"></span></button>
+                </form>
+            </div>
+
+            <div class="main-container-nav">
+
+                <a href="" class="bag">
+                    <div class="items-number"><span>0</span></div>
+                    <span class="nav-icon menu-icon"></span>
+                    <span class="nav-icon-text">Mi compra</span>
+                </a>
+
+                <a href="./user.html">
+                    <span class="nav-icon user-icon"></span>
+                    <span class="nav-icon-text">Mi cuenta</span>
+                </a>
+
+                <div class="hamburgerMenu">
+                    <label for="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-container">
+            <nav>
+                <ul class="navigation-list">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="">LIBROS MAS VENDIDOS</a></li>
+                    <li><a href="">NOVEDADES Y NOTICIAS</a></li>
+                    <li><a href="">AUTORES</a></li>
+                    <li><a href="">EDITORIALES</a></li>
+                    <li><a href="">LIBROS ANTIGUOS</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
     <main class="main-login-container">
         <div class="login-container">
+            <form action="">
+
+                <label for="email">
+                <h3>E-mail</h3>
+                <input class="txt-form" type="text" id="email">
+                <p>Este email no esta registrado en nuestro sistema</p>
+                </label>
+
+                <label for="password">
+                <h3>Contraseña</h3>
+                <input class="txt-form" type="password" id="password">
+                <p>Completa este campo</p>
+                </label>
+
+                <a href="">¿Olvidaste la contraseña?</a>
+
+                <input type="submit" style="display: block;">
+
+            </form>
+
+            <form action=""></form>
         </div>
     </main>
     <footer></footer>    
