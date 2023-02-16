@@ -73,6 +73,25 @@ header {
     width: 252px;
 }
 
+.main-container-nav .bag {
+    position: relative;
+}
+
+.main-container-nav .items-number {
+    
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #FF6B6B;
+    border-radius: 50%;
+    left: 19px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 22px;
+
+}
+
 
 .main-container-nav a{
     text-decoration: none;
