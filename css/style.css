@@ -19,6 +19,11 @@ header {
     width: 100%;
 }
 
+#supertitulo{
+    font-size: 3rem;
+    color: red;
+}
+
 .main-header-container {
     position: relative;
     width: 100%;
