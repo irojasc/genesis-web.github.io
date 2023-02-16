@@ -133,6 +133,19 @@ header {
     display: none;
 }
 
+.main-login-container{
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 100%;
+    background-color: pink;
+}
+
 
 @media screen and (max-width: 1070px){
 
