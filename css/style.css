@@ -205,16 +205,16 @@ header {
 }
 
 .login-container .btn-user-form{
+    display: block;
     width: 100%;
     max-width: 418px;
     height: 46px;
     font-size: 1.6rem;
     font-weight: 600;
     color: #fff;
-    background-color: var(--navigation);
-    border-color: var(--navigation);
+    background-color: #11526099;
+    border-color: #11526099;
     border-radius: 4px;
-    opacity: 0.5;
 }
 
 
@@ -233,7 +233,7 @@ header {
     .nav-icon-text {
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width: 775px){
@@ -342,8 +342,11 @@ header {
         z-index: -1;
     }
 
-
-
+    .footer_main{
+        position: absolute; 
+        top: 688px; 
+        z-index: -1;
+    }
 }
 
 
