@@ -22,7 +22,6 @@ header {
 .principal-header {
     position: sticky;
     top: 0px;
-    
 }
 
 .main-header-container {
@@ -333,8 +332,9 @@ header {
     }
 
     .main-login-container{
-        position: relative;
-        transform: translateY(48px);
+        position: absolute;
+        top: 98px;
+        /* transform: translateY(48px); */
         z-index: -1;
     }
 
