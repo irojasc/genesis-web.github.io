@@ -338,8 +338,7 @@ header {
 
     .main-login-container{
         position: absolute;
-        /* top: 98px; */
-        transform: translateY(48px);
+        transform: translateY(98px);
         z-index: -1;
     }
 
