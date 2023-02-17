@@ -238,6 +238,11 @@ header {
 
 @media screen and (max-width: 775px){
 
+    .principal-header {
+        position: fixed;
+        top: 0px;
+    }
+
     .hamburgerMenu { 
         display: block;
     }
@@ -333,10 +338,12 @@ header {
 
     .main-login-container{
         position: absolute;
-        top: 98px;
-        /* transform: translateY(48px); */
+        /* top: 98px; */
+        transform: translateY(48px);
         z-index: -1;
     }
+
+
 
 }
 
