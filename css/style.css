@@ -162,22 +162,41 @@ header {
     height: 550px;
     display: grid;
     grid-template-columns: minmax(30px, 1fr) minmax(260px,478px) minmax(30px, 1fr);
-
     font-size: 1.4rem;
     color: #444444;
 }
 
 .login-container{
     grid-column: 2 / 3;
-    place-self: center;
+    justify-self: center;
     width: 100%;
-    height: 400px;
-    padding: 50px 30px 0;
+    padding: 30px 30px 30px;
     border: 1px solid #e7e7e7;
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
     box-shadow: 0 0 4px 5px rgb(0 0 0 / 2%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px minmax(400px, fit-content);
 }
+
+input, form{
+    display: none;
+}
+
+.main-login-container label{
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 10px 30px;
+}
+
+#account-acces-tab:checked~#account-acces-content,
+#new-user-tab:checked~#new-user-content{
+    display: block;
+}
+
+
 
 .login-container .txt-form{
     width: 100%;
@@ -216,9 +235,6 @@ header {
     border-color: #11526099;
     border-radius: 4px;
 }
-
-
-
 
 @media screen and (max-width: 1070px){
 

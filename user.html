@@ -19,9 +19,9 @@
     </script> 
 </head>
 <body>
-    <header id="header" class="principal-header"></header>
+    <!-- <header id="header" class="principal-header"></header> -->
 
-    <!-- <header class="principal-header">
+    <header class="principal-header">
         <input type="checkbox" id="hamburger">
         
         <section class="main-header-container">
@@ -69,12 +69,18 @@
                 </ul>
             </nav>
         </section>
-    </header> -->
+    </header>
 
 
     <main class="main-login-container">
+
         <div class="login-container">
-            <form action="">
+            <input id="account-acces-tab" type="radio" name="tabs" checked>
+            <label for="account-acces-tab">Acceso a tu cuenta</label>
+            <input id="new-user-tab" type="radio" name="tabs">
+            <label for="new-user-tab">Nuevo usuario</label>
+
+            <!-- <form id ="account-acces-content" action="">
 
                 <label for="email">
                 <h3 class="txt-title-lbl">E-mail</h3>
@@ -91,7 +97,10 @@
                 <a href="" class="forgotten-password">¿Olvidaste la contraseña?</a>
 
                 <input class="btn-user-form" type="submit" value="Entrar">
-            </form>
+
+            </form> -->
+
+            <form action="" id="new-user-content"></form>
 
         </div>
     </main>
