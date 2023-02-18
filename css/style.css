@@ -159,7 +159,7 @@ header {
 
 .main-login-container{
     width: 100%;
-    height: 550px;
+    height: fit-content;
     display: grid;
     grid-template-columns: minmax(30px, 1fr) minmax(260px,478px) minmax(30px, 1fr);
     font-size: 1.4rem;
@@ -170,25 +170,40 @@ header {
     grid-column: 2 / 3;
     justify-self: center;
     width: 100%;
-    padding: 30px 30px 30px;
+    height: fit-content;
+    margin: 80px 0;
+    padding: 0px 0px 40px;
     border: 1px solid #e7e7e7;
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
     box-shadow: 0 0 4px 5px rgb(0 0 0 / 2%);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px minmax(400px, fit-content);
+    grid-template-rows: 60px minmax(600px, fit-content);
 }
 
-input, form{
+#account-acces-content, #new-user-content{
+    padding: 0 25px;
+    margin-top: 40px;
+}
+
+
+#account-acces-tab, 
+#new-user-tab, 
+#account-acces-content,
+#new-user-content{
     display: none;
 }
 
-.main-login-container label{
+.login-container>label{
     cursor: pointer;
     display: block;
-    float: left;
-    padding: 10px 30px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    background-color: rgb(238, 238, 238);
+    line-height: 40px;
 }
 
 #account-acces-tab:checked~#account-acces-content,
@@ -196,7 +211,14 @@ input, form{
     display: block;
 }
 
+#account-acces-tab:checked+label,
+#new-user-tab:checked+label{
+    background-color: #fff;
+}
 
+#account-acces-content, #new-user-content{
+    grid-area: 2 / 1 / 3 / 3;
+} 
 
 .login-container .txt-form{
     width: 100%;
@@ -207,7 +229,6 @@ input, form{
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
     background-color: #fff;
-
     font-size: 1.6rem;
     color: #3a3a3a;
 }
@@ -234,6 +255,7 @@ input, form{
     background-color: #11526099;
     border-color: #11526099;
     border-radius: 4px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1070px){
