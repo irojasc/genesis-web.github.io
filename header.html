@@ -1,62 +1,51 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body> -->
-    <!-- <header class="principal-header"> -->
-        <input type="checkbox" id="hamburger">
+<!-- <header> -->
+    <input type="checkbox" id="hamburger">
+    
+    <section class="header-up-container">
+        <figure><a href="./index.html"><img class="logo-img" src="./assets/imgs/logo.png" alt="logo"></a></figure>
         
-        <section class="main-header-container">
-            <figure><a href="./index.html"><img class="logo-img" src="./assets/imgs/logo.png" alt="logo"></a></figure>
-            
-            <div class="search-container">
-                <form class="search-form" action="">
-                    <input class="search-text" type="text" placeholder="Titulo, Autor o ISBN" >
-                    <button class="btn-search" title="buscar" type="submit"><span class="nav-icon search-icon"></span></button>
-                </form>
+        <div class="header-up__search-cont">
+            <form class="search-form" action="./user.html">
+                <input class="search-text" type="text" placeholder="Titulo, Autor o ISBN" >
+                <button class="btn-search" title="buscar" type="button"><span class="nav-icon search-icon"></span></button>
+            </form>
+        </div>
+
+        <div class="header-up__nav-cont">
+
+            <a href="" class="bag">
+                <div class="items-number"><span>0</span></div>
+                <span class="nav-icon menu-icon"></span>
+                <span class="nav-icon-text">Mi compra</span>
+            </a>
+
+            <a href="./user.html">
+                <span class="nav-icon user-icon"></span>
+                <span class="nav-icon-text">Mi cuenta</span>
+            </a>
+
+            <div class="hamburgerMenu">
+                <label for="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
             </div>
+        </div>
+    </section>
 
-            <div class="main-container-nav">
+    <section class="header-down-container">
+        <nav>
+            <ul class="header-down__nav-list">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="">LIBROS MAS VENDIDOS</a></li>
+                <li><a href="">NOVEDADES Y NOTICIAS</a></li>
+                <li><a href="">AUTORES</a></li>
+                <li><a href="">EDITORIALES</a></li>
+                <li><a href="">LIBROS ANTIGUOS</a></li>
+            </ul>
+        </nav>
+    </section>
+<!-- </header> -->
 
-                <a href="" class="bag">
-                    <div class="items-number"><span>0</span></div>
-                    <span class="nav-icon menu-icon"></span>
-                    <span class="nav-icon-text">Mi compra</span>
-                </a>
-
-                <a href="./user.html">
-                    <span class="nav-icon user-icon"></span>
-                    <span class="nav-icon-text">Mi cuenta</span>
-                </a>
-
-                <div class="hamburgerMenu">
-                    <label for="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
-                </div>
-            </div>
-        </section>
-
-        <section class="navigation-container">
-            <nav>
-                <ul class="navigation-list">
-                    <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="">LIBROS MAS VENDIDOS</a></li>
-                    <li><a href="">NOVEDADES Y NOTICIAS</a></li>
-                    <li><a href="">AUTORES</a></li>
-                    <li><a href="">EDITORIALES</a></li>
-                    <li><a href="">LIBROS ANTIGUOS</a></li>
-                </ul>
-            </nav>
-        </section>
-    <!-- </header> -->
-<!-- 
-</body>
-</html> -->
 
