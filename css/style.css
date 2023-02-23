@@ -20,6 +20,7 @@ header{
     position: sticky;
     top: 0px;
     width: 100%;
+    z-index: 1;
 }
 
 .header-up-container {
@@ -254,9 +255,11 @@ header{
 }
 
 footer{
+    position: relative;
     width: 100%;
     min-width: 850px;
     background-color: #38383a;
+    z-index: 0;
 }
 
 footer .footer-up-container{
