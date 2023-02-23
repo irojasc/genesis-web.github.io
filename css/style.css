@@ -152,7 +152,7 @@ header{
 }
 
 /* Main Part */
-.main-login-container{
+.main-login-container, main{
     width: 100%;
     height: fit-content;
     display: grid;
@@ -255,6 +255,7 @@ header{
 
 footer{
     width: 100%;
+    min-width: 850px;
     background-color: #38383a;
 }
 
@@ -265,18 +266,69 @@ footer .footer-up-container{
 
 footer .footer-down-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;    
-    text-align: center;
-
-    padding: 40px 10px 40px;
+    padding: 0px 40px 40px;
 }
 
-.footer-down__info a{
+.footer-down__info{
+    min-width: 210px;
+    margin: 40px 10px 0px;
+}
+
+.footer-down__info h3{
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #1b8097ff;
+    margin-bottom: 10px;
+}
+
+.footer-down__info-txt a{
     display: block;
+    margin-bottom: 8px;
     color: #fff;
     text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 300;
 }
+
+.footer-icons{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 8px 0px 0px;
+    opacity: 0.6;
+}
+
+.footer-face{
+    background-image: url('../assets/icons/facebook.svg');
+}
+
+.footer-inst{
+    background-image: url('../assets/icons/instagram.svg');
+}
+
+.footer-whats{
+    background-image: url('../assets/icons/whatsaap.svg');
+}
+
+.footer__payments-img{
+    display: block;
+    width: 210px;
+    margin-top: 15px;
+    opacity: 0.2;
+}
+
+footer > h3{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 50px;
+}
+
+
 
 @media screen and (max-width: 1070px){
 
@@ -291,6 +343,26 @@ footer .footer-down-container{
     .nav-icon-text {
         display: none;
     }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+    footer .footer-down-container{
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .footer-down__info{
+        text-align: center;
+    }
+
+    .footer__logo-img{
+        margin: 0 auto;
+        max-height: 50px;
+    }
+
 
 }
 
@@ -334,6 +406,10 @@ footer .footer-down-container{
 
     .logo-img{
         max-height: 32px;
+    }
+
+    .footer__logo-img{
+        max-height: 50px;
     }
 
     .header-up-container {
@@ -413,6 +489,12 @@ footer .footer-down-container{
         z-index: -1; */
     }
 
+    main{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: block;
+    }
+
     .footer_main{
         grid-column: 1/2;
         grid-row: 3/4;
@@ -423,6 +505,8 @@ footer .footer-down-container{
     }
 
     footer{
+        width: 100%;
+        min-width: 320px;
         grid-column: 1/2;
         grid-row: 3/4;
     }

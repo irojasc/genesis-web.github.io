@@ -21,8 +21,100 @@
 </head>
 <body>
     <!-- <div id="header"></div> -->
-    <header id="header"></header>
+    <!-- <header id="header"></header> -->
+    <header>
+        <input type="checkbox" id="hamburger">
+    
+        <section class="header-up-container">
+            <figure><a href="./index.html"><img class="logo-img" src="./assets/imgs/logo.png" alt="logo"></a></figure>
+            
+            <div class="header-up__search-cont">
+                <form class="search-form" action="./user.html">
+                    <input class="search-text" type="text" placeholder="Titulo, Autor o ISBN" >
+                    <button class="btn-search" title="buscar" type="button"><span class="nav-icon search-icon"></span></button>
+                </form>
+            </div>
+    
+            <div class="header-up__nav-cont">
+    
+                <a href="" class="bag">
+                    <div class="items-number"><span>0</span></div>
+                    <span class="nav-icon menu-icon"></span>
+                    <span class="nav-icon-text">Mi compra</span>
+                </a>
+    
+                <a href="./user.html">
+                    <span class="nav-icon user-icon"></span>
+                    <span class="nav-icon-text">Mi cuenta</span>
+                </a>
+    
+                <div class="hamburgerMenu">
+                    <label for="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </div>
+            </div>
+        </section>
+    
+        <section class="header-down-container">
+            <nav>
+                <ul class="header-down__nav-list">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="">LIBROS MAS VENDIDOS</a></li>
+                    <li><a href="">NOVEDADES Y NOTICIAS</a></li>
+                    <li><a href="">AUTORES</a></li>
+                    <li><a href="">EDITORIALES</a></li>
+                    <li><a href="">LIBROS ANTIGUOS</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
     <main style="height: 400px;"></main>
     <footer id="footer"></footer>
+
+    <!-- <footer>
+        <section class="footer-up-container">
+            <h2>Novedades y promociones exclusivas</h2>
+            <p>Suscribete para estar al tanto de novedades y promociones</p>
+        </section>
+
+        <section class="footer-down-container">
+            <div class="footer-down__info footer-down__icons-cont">
+                <figure><img class="logo-img footer__logo-img" src="./assets/imgs/logo.png" alt="logo"></figure>
+                <div>
+                    <a href="https://www.facebook.com/libreriagenesiscusco" target="_blank"><span class="footer-icons footer-face"></span></a>
+                    <a href="https://www.instagram.com/libreriagenesiscusco/" target="_blank"><span class="footer-icons footer-inst"></span></a>
+                    <a href="https://wa.me/51935017677" target="_blank"><span class="footer-icons footer-whats"></span></a>
+                </div>
+                <figure><img class="footer__payments-img" src="./assets/imgs/payments.svg" alt="metodos de pago"></figure>
+            </div>
+
+            <div class="footer-down__info footer-down__info-txt">
+                <h3>CONTACTO</h3>
+                <a href=""><span></span>(+51) 84265039</a>
+                <a href=""><span></span>libreriagenesiscusco@gmail.com</a>
+            </div>
+
+            <div class="footer-down__info footer-down__info-txt">
+                <h3>PÁGINAS LEGALES</h3>
+                <a href="">Costos de despacho</a>
+                <a href="">Medios de pago</a>
+                <a href="">Politica de cambio y devolución</a>
+                <a href="">Politica de privacidad</a>
+                <a href="">Terminos y condiciones</a>
+            </div>
+
+            <div class="footer-down__info footer-down__info-txt">
+                <h3>ATENCIÓN AL CLIENTE</h3>
+                <a href="">Contacto</a>
+                <a href="">Sobre nosotros</a>
+            </div>
+        </section>
+        <hr style="color: #fff; width: 80%; margin: 20px auto 0px; opacity: 0.05;">
+        <h3>2023 @ Librería Genesis Cusco. Todos los Derechos Reservados</h3>
+    </footer>     -->
 </body>
 </html>
