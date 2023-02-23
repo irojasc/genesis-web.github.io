@@ -253,6 +253,31 @@ header{
     margin-top: 20px;
 }
 
+footer{
+    width: 100%;
+    background-color: #38383a;
+}
+
+footer .footer-up-container{
+    background-color: var(--navigation);
+    text-align: center;
+}
+
+footer .footer-down-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    text-align: center;
+
+    padding: 40px 10px 40px;
+}
+
+.footer-down__info a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1070px){
 
     .header-up__search-cont{
@@ -274,7 +299,7 @@ header{
     body{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 98px min-content 220px;
+        grid-template-rows: 98px min-content min-content;
     }
 
     header{
@@ -395,6 +420,11 @@ header{
         /* position: absolute; 
         top: 688px; 
         z-index: -1; */
+    }
+
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
 }
 
