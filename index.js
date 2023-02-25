@@ -1,4 +1,4 @@
-const btn1 = document.getElementById('btn1');
+/* const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 const allImages = document.querySelector('.main-slider-images');
@@ -45,5 +45,5 @@ function cambiar(){
     }
 }
 
-window.setInterval(cambiar, 4000);
+window.setInterval(cambiar, 4000); */
 
