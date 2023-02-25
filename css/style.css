@@ -152,8 +152,53 @@ header{
     display: none;
 }
 
-/* Main Part */
-.main-login-container, main{
+/* Main Part Index*/
+
+.main-slider-container{
+    position: relative;
+    width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-slider{
+    /* position: relative; */
+    width: 100%;
+    padding: 10px 0px 0px;
+    transition: 0.5s linear;
+    display: flex;
+    justify-content: center;
+}
+
+.main-slider-images{
+    display: flex;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.main-slider__img{
+    width: 100%;
+    margin: 0 10px 0 0;
+}
+
+.main-slider-buttons{
+    position: absolute;
+    top: 90%;
+    transform: translateY(-25%);
+}
+
+.main-slider-buttons input{
+    margin: 3px;
+    cursor: pointer;
+    accent-color: black;
+}
+
+
+/* Main Part Login */
+.main-login-container{
     width: 100%;
     height: fit-content;
     display: grid;
@@ -397,6 +442,10 @@ footer > h3{
         display: none;
     }
 
+    .main-slider-container{
+        width: 95%;
+    }
+
 }
 
 
@@ -431,11 +480,21 @@ footer > h3{
     }
 
     footer .footer-up-container > div{
-        width: 90%;
+        width: 95%;
+    }
+
+    main {
+        min-width: 850px;
     }
 }
 
 @media screen and (max-width: 775px){
+
+
+
+    .main-slider-container{
+        width: 95%;
+    }
 
     body{
         display: grid;
@@ -559,6 +618,7 @@ footer > h3{
     }
 
     main{
+        min-width: 320px;
         grid-column: 1/2;
         grid-row: 2/3;
         display: block;
