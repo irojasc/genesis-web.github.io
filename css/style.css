@@ -165,9 +165,8 @@ header{
 }
 
 .main-slider{
-    /* position: relative; */
     width: 100%;
-    padding: 10px 0px 0px;
+    padding: 30px 0px 0px;
     transition: 0.5s linear;
     display: flex;
     justify-content: center;
