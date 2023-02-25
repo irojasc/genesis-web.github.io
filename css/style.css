@@ -187,13 +187,27 @@ header{
 .main-slider-buttons{
     position: absolute;
     top: 90%;
-    transform: translateY(-25%);
+    transform: translateY(-30%);
 }
 
 .main-slider-buttons input{
-    margin: 3px;
+    display: none;
+}
+
+.div_btn_radio{
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: rgb(31, 31, 31);
+    display: inline-block;
+    opacity: 0.5;
     cursor: pointer;
-    accent-color: black;
+}
+
+.main-slider-buttons input:checked + div{
+    background-color: rgb(66, 66, 66);
+    opacity: 1;
 }
 
 
