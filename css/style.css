@@ -159,34 +159,37 @@ header{
     width: 1070px;
     margin: 0 auto;
     display: flex;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
 .main-slider{
-    width: 100%;
-    padding: 30px 0px 0px;
-    transition: 0.5s linear;
-    display: flex;
-    justify-content: center;
+    width: 1070px;
+    padding: 20px 0px 0px;
+    overflow: hidden;
 }
 
 .main-slider-images{
+    width: 300%;
     display: flex;
-    border-radius: 10px;
+    flex-direction: row;
+    position: relative;
     transition: all 0.5s;
 }
 
-.main-slider__img{
-    width: 100%;
+.main-slider-images a{
+    width: 33.33%;
     margin: 0 10px 0 0;
+}
+
+.main-slider-images a img{
+    width: 100%;
 }
 
 .main-slider-buttons{
     position: absolute;
     top: 90%;
-    transform: translateY(-30%);
+    transform: translateY(-40%);
 }
 
 .main-slider-buttons input{
@@ -459,6 +462,21 @@ footer > h3{
         width: 95%;
     }
 
+    .main-slider{
+        width: 100%;
+    }
+
+    .main-slider-images{
+        width: 300%;
+    }
+
+    .main-slider-images a{
+        width: 33.33%;
+    }
+
+    .main-slider-images a img{
+        width: 100%;
+    }
 }
 
 
