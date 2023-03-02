@@ -72,7 +72,13 @@ function disp(){
     img_product.setAttribute('class', 'product-img');
     product_img.appendChild(img_product);
 
-    $.get("https://raw.githubusercontent.com/irojasc/genesis-web.github.io/main/content/" + String(localStorage.getItem("data")) + ".txt", function (data, status, textStatus, jqXHR) {  // success callback
+
+    //https://raw.githubusercontent.com/irojasc/genesis-web.github.io/main/content/GN_2109.txt
+
+    let url = "https://raw.githubusercontent.com/irojasc/genesis-web.github.io/main/content/" + String(localStorage.getItem("data")) + ".txt";
+    console.log(url);
+
+    $.get(url, function (data, status, textStatus, jqXHR) {  // success callback
         let data_book = data.split('|');
         console.log(data_book[0]);
         product_title.innerText = data_book[0];        
