@@ -86,6 +86,6 @@ function disp(){
         console.log(data_book[0]);
         title.innerText = String(data_book[0]);
         autor.innerText = String(data_book[1]);
-        price.innerText = String(data_book[3]) + ".00";
+        price.innerText =  "S/." + String(data_book[3]) + ".00";
     });
 }
