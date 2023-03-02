@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 <body>
 
-    <header>
+    
+    <header id="header"></header>
+    <!-- <header>
         <input type="checkbox" id="hamburger">
 
         <section class="header-up-container">
@@ -59,7 +68,7 @@
                 </ul>
             </nav>
         </section>
-    </header>
+    </header> -->
 
 
     <main class="main-product">
@@ -111,8 +120,9 @@
             </div>
         </section>
     </main>
+    <footer id="footer"></footer>
 
-    <footer>
+    <!-- <footer>
         <section class="footer-up-container">
             <div class="footer-up__txt-cont">
                 <span></span>
@@ -162,7 +172,7 @@
         </section>
         <hr style="color: #fff; width: 80%; margin: 20px auto 0px; opacity: 0.05;">
         <h3>2023 @ Librería Genesis Cusco. Todos los Derechos Reservados</h3>
-    </footer>    
+    </footer>     -->
 
     <script>disp();</script>
 </body>
