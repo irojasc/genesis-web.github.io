@@ -315,6 +315,103 @@ header{
     margin-top: 20px;
 }
 
+/* Main part product details */
+
+.main-product{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 130px;
+}
+
+.product-container{
+    width: 100%;
+    display: grid;
+    gap: 50px ;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+
+#product-details a, #product-details .td-data{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}    
+
+#product-details{
+    font-size: 1.5rem;
+}
+
+#product-details > h1{
+    margin: 5px 0 5PX;
+    font-size: 2.8rem;
+}
+
+#product-details p{
+    margin-bottom: 20px;
+}
+
+#product-details .td-title{
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+#product-details .td-data{
+    padding: 0 0 8px 6px;
+}
+
+.product-img{
+    width: 100%;
+}
+
+#product-details a:hover{
+    text-decoration: underline;
+}
+
+.buy-product{
+    border-left: 1px solid #eeeeee;
+    padding-left: 30px;
+}
+
+#price{
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.disponilidad-book{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1b8097ff;
+}
+
+.buy-button{
+    display: block;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--navigation);
+    font-size: 1.8rem;
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.buy-icon{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../assets/icons/cart-buy.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+/* Esta parte comienza el Footer  */
 footer{
     position: relative;
     width: 100%;

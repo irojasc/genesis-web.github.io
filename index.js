@@ -2,7 +2,14 @@ const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 const allImages = document.querySelector('.main-slider-images');
-const am = document.querySelectorAll('a');
+const am = document.querySelectorAll('a'); //este esta considerando a todos los a
+
+
+
+function cambiarMundo(event){
+    let attr = event.currentTarget.getAttribute('value');
+    localStorage.setItem("data", attr);
+}
 
 for(const element of am){
     element.addEventListener('click', cambiarMundo);
@@ -25,17 +32,6 @@ btn3.addEventListener('click', function () {
     allImages.style.transform = 'translateX(-66.66%)';
     index = 3;
 });
-
-
-function cambiarMundo(event){
-    let attr = event.currentTarget.getAttribute('value');
-    localStorage.setItem("data", attr);
-}
-
-function disp(){
-    console.log(localStorage.getItem("data"));
-}
-
 
 
 function cambiar(){
@@ -63,3 +59,21 @@ function cambiar(){
 
 window.setInterval(cambiar, 4000);
 
+
+
+
+function disp(){
+    product_img = document.getElementById("product-img-cont");
+    product_title = document.getElementById("product-title");
+    const img_product = document.createElement('img');
+    let url_img = "./assets/books/" +   String(localStorage.getItem("data")) + ".png";
+    img_product.setAttribute('src', url_img);
+    img_product.classList.add('class');
+    img_product.setAttribute('class', 'product-img');
+    product_img.appendChild(img_product);
+
+    $.get("https://raw.githubusercontent.com/irojasc/genesis_web_git/content/GN_2109.txt", function (data, status, textStatus, jqXHR) {  // success callback
+        let data_book = data.split('|');
+        product_title.innerText = data_book[0];        
+    });
+}

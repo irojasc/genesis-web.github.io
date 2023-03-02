@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./index.js"></script>
 </head>
 <body>
+
     <header>
         <input type="checkbox" id="hamburger">
 
@@ -60,9 +62,54 @@
     </header>
 
 
-    <main>
-        <h1 style="color: black; padding: 60px 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum recusandae iure tempora officiis deserunt rem! Nam obcaecati dolor et veniam laborum quasi amet, quisquam nesciunt qui, autem exercitationem delectus beatae ea quas repudiandae accusantium error magnam assumenda corporis, ut cumque dolorum molestias sint aliquid? Id excepturi beatae est modi! Reprehenderit laborum veritatis eos ea fugit totam similique voluptatibus officia, quod unde, placeat saepe, quos harum itaque sunt! Quidem saepe eos quia necessitatibus fugiat odit natus, facilis atque omnis, sit temporibus rerum vero eius cumque? Officia molestiae voluptatem expedita doloribus enim corporis optio, quo modi obcaecati at, ad asperiores iste! Eaque dolores repellat nihil quibusdam neque earum, nisi dolorem unde officia sed, illum dignissimos eius mollitia accusamus dolorum. Incidunt delectus repellendus praesentium ut adipisci corporis odio atque ratione iste molestiae beatae qui mollitia doloremque iusto voluptatibus eum necessitatibus numquam quibusdam neque, tempora quae. Perferendis omnis explicabo, totam quasi aliquam qui? Sapiente alias autem quas in deleniti aspernatur quibusdam commodi, ducimus quo nihil facilis eius animi, soluta nemo reprehenderit voluptatum modi dolorum molestias, dolore iusto. Quis commodi exercitationem magni consectetur a inventore odio eos laboriosam dolores placeat voluptates quam, accusantium est tenetur eius suscipit vitae nostrum hic rem ex tempore modi. Tenetur, placeat ratione blanditiis neque consequuntur qui dolore sit quas tempore, impedit voluptatem minus ullam. Ex, alias commodi possimus iste dolorum quod fuga repudiandae facilis similique, deleniti aperiam, aliquam voluptas dolor tenetur. Laborum, qui nulla delectus facere corrupti, quod omnis ullam dolorem id error vitae impedit reprehenderit inventore asperiores nemo fuga laudantium ducimus sed ex earum, quam aliquam ut temporibus atque. Dolore, officiis perferendis sint optio cupiditate ipsam praesentium excepturi voluptate doloribus quibusdam facere, corrupti ab, earum ullam cum? Iure maxime quas veniam adipisci ex officiis necessitatibus, ea consectetur mollitia error expedita, illo ullam! Accusantium quidem facere qui illum necessitatibus!
-        </h1>
+    <main class="main-product">
+        <section class="product-container">
+            <figure id="product-img-cont"></figure>
+            <div id="product-details">
+                <h1>EL ESPIA DEL INCA</h1>
+                <a href=""><p>DUMMETT, RAFAEL</p></a>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="td-title">Editorial: </td>
+                            <td class="td-data"><a href="">ALFAGUARA</a></td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Año de edición: </td>
+                            <td class="td-data">2022</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">ISBN: </td>
+                            <td class="td-data">978-84-253-5993-4</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Paginas: </td>
+                            <td class="td-data">226</td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-title">Encuadernación: </td>
+                            <td class="td-data">Rustica</td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-title">Idioma: </td>
+                            <td class="td-data">Castellano</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="td-title">Dimensiones: </td>
+                            <td class="td-data">230 x 150</td>
+                        </tr>
+                    </table>
+                       </div>
+            </div>
+            <div class="buy-product">
+                <span id="price">S/129.00</span>
+                <div class="disponibilidad"> <span class="disponilidad-book">En stock</span></div>
+                <a class="buy-button" href=""><span class="buy-icon"></span> Comprar</a>
+            </div>
+        </section>
     </main>
 
     <footer>
