@@ -64,7 +64,7 @@ window.setInterval(cambiar, 4000);
 
 function disp(){
     product_img = document.getElementById("product-img-cont");
-    product_title = document.getElementById("product-title");
+    title = document.getElementById("product-title");
     const img_product = document.createElement('img');
     let url_img = "./assets/books/" +   String(localStorage.getItem("data")) + ".png";
     img_product.setAttribute('src', url_img);
@@ -81,6 +81,6 @@ function disp(){
     $.get(url, function (data, status, textStatus, jqXHR) {  // success callback
         let data_book = data.split('|');
         console.log(data_book[0]);
-        product_title.innerText = data_book[0];        
+        title.innerText = String(data_book[0]);        
     });
 }
