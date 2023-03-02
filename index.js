@@ -72,7 +72,7 @@ function disp(){
     img_product.setAttribute('class', 'product-img');
     product_img.appendChild(img_product);
 
-    $.get("https://raw.githubusercontent.com/irojasc/genesis_web_git/content/GN_2109.txt", function (data, status, textStatus, jqXHR) {  // success callback
+    $.get("https://raw.githubusercontent.com/irojasc/genesis-web.github.io/main/content/" + String(localStorage.getItem("data")) + ".txt", function (data, status, textStatus, jqXHR) {  // success callback
         let data_book = data.split('|');
         product_title.innerText = data_book[0];        
     });
