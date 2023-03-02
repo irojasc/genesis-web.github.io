@@ -74,6 +74,7 @@ function disp(){
 
     $.get("https://raw.githubusercontent.com/irojasc/genesis-web.github.io/main/content/" + String(localStorage.getItem("data")) + ".txt", function (data, status, textStatus, jqXHR) {  // success callback
         let data_book = data.split('|');
+        console.log(data_book[0]);
         product_title.innerText = data_book[0];        
     });
 }
